@@ -12,8 +12,6 @@ app.use(cors())
 
 const port = 3080;
 
-
-
 const configuration = new Configuration({
     organization: "org-4RxO9OW9Pb09NWZOYU2oiFTk",
     apiKey: "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",
@@ -63,15 +61,8 @@ app.post('/',async (req, res) => {
       }
     });
     
-    // console.log(response.data.choices[0].text)
     
 });
-// const response = await openai.createCompletion({
-    //     model: "text-davinci-003",
-    //     prompt: "Say this is a test",
-    //     max_tokens: 7,
-    //     temperature: 0,
-
 
 // Handle the PDF upload
 app.post('/upload-pdf', upload.single('pdfFile'), (req, res) => {
