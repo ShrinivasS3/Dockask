@@ -1,6 +1,6 @@
 import sys
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "api_key"
 
 from PyPDF2 import PdfReader
 from langchain.embeddings.openai import OpenAIEmbeddings
